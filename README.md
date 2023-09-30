@@ -2,7 +2,7 @@
 Mi Primer Proyecto de Android Studio en Github 
 
 ##### Autor: Alejandro López
-https://i.postimg.cc/bw2zkvC4/Imagen1-1.jpg
+
 ### Contenido del Ejercicio
 - Acostumbrarse al entorno de desarrollo Android Studio.
 - Realizar una aplicación simple con dos TextView con algunas personalizaciones como cambio de letra, color, etc.
