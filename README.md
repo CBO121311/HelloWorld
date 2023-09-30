@@ -2,7 +2,7 @@
 Mi Primer Proyecto de Android Studio en Github 
 
 ##### Autor: Alejandro López
-
+https://i.postimg.cc/bw2zkvC4/Imagen1-1.jpg
 ### Contenido del Ejercicio
 - Acostumbrarse al entorno de desarrollo Android Studio.
 - Realizar una aplicación simple con dos TextView con algunas personalizaciones como cambio de letra, color, etc.
@@ -16,15 +16,19 @@ Mi Primer Proyecto de Android Studio en Github
 
 ## 1) Creación y diseño de una aplicación.
 
-**1.** Se crea un nuevo proyecto para móvil y tablet utilizando como plantilla*"Empty Views Activity”*, que contiene "un contenedor" con lo mínimo para comenzar realizar nuestra interfaz de usuario, es como nuestro lienzo en blanco.
+**1.** Se crea un nuevo proyecto para móvil y tablet utilizando como plantilla *"Empty Views Activity”*, que contiene "un contenedor" con lo mínimo para comenzar realizar nuestra interfaz de usuario, es como nuestro lienzo en blanco.
+
 ![](https://i.postimg.cc/Pr9k5ZLj/Imagen2.jpg)
 
+**2.** El lenguaje que utilizaremos será Java y escogeremos el Android 8.0 como versión del sistema operativo.
 
-**2.** Navegamos al directorio *res* (recursos) -> layout -> *activity_main.xml* que es donde definimos la interfaz principal del usuario. Para personalizarlo podemos hacerlo desde el propio entorno o desde código.
+![](https://i.postimg.cc/4NfPY7dN/Imagen1-1.jpg)
+
+**3.** Navegamos al directorio *res* (recursos) -> layout -> *activity_main.xml* que es donde definimos la interfaz principal del usuario. Para personalizarlo podemos hacerlo desde el propio entorno o desde código.
 
 ![](https://i.postimg.cc/pdtbDHYc/Imagen3.jpg)
 
-**3.**En este caso usaremos desde código:
+**4.** En este caso lo haremos desde código:
 - El contenedor será Lineal (LinearLayout) de orientación vertical.
 - Introduciremos un nuevo TextView y cambiaremos las proporciones para que ambos ocupen la mitad de la pantalla.
 - Añadimos una ID a ambos componentes.
@@ -32,29 +36,25 @@ Mi Primer Proyecto de Android Studio en Github
 
 ![](https://i.postimg.cc/3wCM1ct8/Imagen4.jpg)
 
-
-**4.** Deseamos agregar líneas de texto y nuevos colores en la interfaz así que tendremos que ir a res->values->*strings.xml* y *colors.xml* para añadirlo, 
-Además vamos a cambiar el nombre de la aplicación "HelloWorld"  a "Hola Mundo".
+**5.** Deseamos agregar nuevas líneas de texto y colores en la interfaz así que tendremos que ir a res->values->*strings.xml* y *colors.xml* para añadirlo.
+Además vamos a cambiar el nombre de la aplicación "HelloWorld" a "Hola Mundo".
 
 ![](https://i.postimg.cc/dQ7ZXXx6/Imagen5.jpg)
 ![](https://i.postimg.cc/gkV7VMmc/Imagen6.jpg)
 
-
-**5.** Volviendo a *activity_main.xml*  añadimos los nuevos colores y el texto.
+**6.** Volviendo a *activity_main.xml*  añadimos los nuevos colores y el texto.
 
 ![](https://i.postimg.cc/Vvxdzfdw/Imagen7.jpg)
 
-
-**6.** Esta vez deseamos que manipular los componentes que hemos personalizados en la interfaz dentro de MainActivity.
+**7.** También deseamos manipular los componentes que hemos personalizados en la interfaz dentro de MainActivity, por tanto navegamos hacia ella
 
 ![](https://i.postimg.cc/500cpDfW/Imagen8.jpg)
 
-**7.** En ella escribimos:
+**8.** En ella escribimos:
 - Modificamos el color del texto de *tvMessageStart.*
 - Cambiamos la cadena de texto de *tvMessageEnd.*
 
 ![](https://i.postimg.cc/hvYNhWtr/Imagen9jpg.jpg)
-
 
 
 
@@ -64,7 +64,7 @@ Además vamos a cambiar el nombre de la aplicación "HelloWorld"  a "Hola Mundo"
 ![](https://i.postimg.cc/MZD1240j/Imagen10-1.jpg)
 
 
-**2.** Con una imagen ya previamente descargada, buscamos/escribimos su ruta en el Path.
+**2.** Con una imagen ya previamente descargada, buscamos o escribimos su ruta en el Path.
 
 ![](https://i.postimg.cc/rFwx8JgZ/Imagen10-2.jpg)
 
@@ -74,7 +74,7 @@ Además vamos a cambiar el nombre de la aplicación "HelloWorld"  a "Hola Mundo"
 
 
 ## 3)  Generar documentación con Javadoc
-**1.** Dentro de la barra de herramientas clickeamos en Tools -> *Generate JavaDoc*. Y en Output Directory seleccionamos el directorio doc, ya creado, para almacenar la documentación.
+**1.** Dentro de la barra de herramientas clickeamos en Tools -> *Generate JavaDoc*. Y en Output Directory seleccionamos el directorio doc, ya creado en el proyecto, para almacenar la documentación.
 
 ![](https://i.postimg.cc/Y00JpqM0/Imagen11-0jpg.jpg)
 ![](https://i.postimg.cc/tC1LwTBm/Imagen11jpg.jpg)
@@ -83,7 +83,7 @@ Además vamos a cambiar el nombre de la aplicación "HelloWorld"  a "Hola Mundo"
 
 ![](https://i.postimg.cc/PrBBjjcf/Imagen12.jpg)
 
-**3.** Buscamos el android.jar y copiamos y pegamos la ruta absoluta donde se encuentra, para incluirlo en las dependencias JAR/AAR.
+**3.** Buscamos el android.jar y copiamos y pegamos la ruta absoluta donde se encuentra para incluirlo en las dependencias JAR/AAR.
 
 ![](https://i.postimg.cc/3rfstpFv/Imagen13.jpg)
 ![](https://i.postimg.cc/sg7bfLdY/Imagen14.jpg)
@@ -93,11 +93,11 @@ Además vamos a cambiar el nombre de la aplicación "HelloWorld"  a "Hola Mundo"
 
 ![](https://i.postimg.cc/431MVh3n/Imagen16.jpg)
 
-**5.** El problema es que tenemos otro error al intentar arrancar la aplicación, que detecta una duplicidad de fichero AndroidManifest.xml. Esto es culpa de la librería última que hemos añadido así, por tanto hay que quitarla.
+**5.** El problema es que tenemos otro error al intentar arrancar la aplicación en el que detecta una duplicidad de fichero AndroidManifest.xml. Esto es culpa de la librería última que hemos añadido por tanto hay que quitarla.
 
 ![](https://i.postimg.cc/DZyNgyW6/Imagen17.jpg)
 
-**6.** Para ello seleccionamos el modo de vista Project, navegamos a app --> *build.gradle.kts* y comentamos la librería del android.jar. con esto se solucionaría el error.
+**6.** Para ello seleccionamos el modo de vista Project, navegamos a app --> *build.gradle.kts* y comentamos la librería del android.jar, con esto se solucionaría el error.
 
 ![](https://i.postimg.cc/8C7rXj3z/Imagen17-1.jpg)
 ![](https://i.postimg.cc/K8qM5n0W/Imagen17-2.jpg)
