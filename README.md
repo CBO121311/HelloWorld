@@ -158,4 +158,18 @@ git rm -r --cached
 ![](https://i.postimg.cc/vTsmwD4d/Imagen28.jpg)
 ![](https://i.postimg.cc/ZKD2g2BT/Imagen29.jpg)
 
+## 6) Captura de pantalla con la aplicación y añadir la imagen en README usando el repositorio
+
+**1.** Hay que realizar la captura y arrastrarlo a tu proyecto.
+
+**2.** Es posible que tengas que hacer un pull de tu repositorio remoto para actualizar tu repositorio local, ya que en mi caso no había añadido el README.
+```
+pull origin master
+```
+**3.** Ya haciendole add, commit y push la imagen debería estar en GitHub. Siguiendo esta estructura debe verse en el README.
+```
+![Nombre_repositorio](nombre_de_la_imagen)
+```
+
+![HelloWorld](Screenshot_2023-09-30-20-10-37-454_com.example.helloworld.jpg)
 ### End
